@@ -5,9 +5,7 @@ import { FETCH_POSTS, NEW_POST } from "./types";
 //     payload,
 //   });
 // };
-export const newPost = (postData) => (dispatch) => {
-  dispatch({
+export const newPost = (postData) => ({
     type: NEW_POST,
     payload: postData,
   });
-};
